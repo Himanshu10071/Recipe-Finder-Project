@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // Spoonacular API (you need to get your own API key)
 // Sign up at https://spoonacular.com/food-api to get a free API key
-const API_KEY = 'baeb4eb8e38b4eb999e160e5a4fcd055';
+const API_KEY = '3beba7dca3f643b2a948efd8072a3934';
 const BASE_URL = 'https://api.spoonacular.com/recipes';
 
 

@@ -37,6 +37,8 @@ const Home = () => {
       // If no saved searches, use default recipes
       setRecipes(DEFAULT_RECIPES);
     }
+
+    
   }, []);
 
   // Handler for search
@@ -72,7 +74,6 @@ const Home = () => {
     }
   };
 
-  // Effect to re-search when filters change
   useEffect(() => {
     // Only re-search if we already have non-default recipes (meaning a search was already performed)
     if (recipes.length > 0 && !recipes.some(r => DEFAULT_RECIPES.map(d => d.id).includes(r.id))) {
@@ -93,11 +94,7 @@ const Home = () => {
       
       <FiltersBar />
       
-      <RecipeList 
-        recipes={recipes} 
-        loading={loading} 
-        error={error} 
-      />
+      <RecipeList recipes={recipes} loading={loading} error={error} />
     </div>
   );
 };

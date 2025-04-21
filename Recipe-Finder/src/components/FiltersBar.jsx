@@ -4,9 +4,6 @@ import React from 'react';
 const FiltersBar = () => {
   const { filters, updateFilters } = useRecipes();
 
-  // const handleFilterChange = (filterName) => {
-  //   updateFilters({ [filterName]: !filters[filterName] });
-  // };
   function handleFilterChange(filterName){
     updateFilters({ [filterName]: !filters[filterName] });
   }
