@@ -4,9 +4,12 @@ import React from 'react';
 const FiltersBar = () => {
   const { filters, updateFilters } = useRecipes();
 
-  const handleFilterChange = (filterName) => {
+  // const handleFilterChange = (filterName) => {
+  //   updateFilters({ [filterName]: !filters[filterName] });
+  // };
+  function handleFilterChange(filterName){
     updateFilters({ [filterName]: !filters[filterName] });
-  };
+  }
 
   return (
     <div className="flex flex-wrap gap-3 mb-4">
